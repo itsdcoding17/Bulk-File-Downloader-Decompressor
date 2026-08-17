@@ -16,18 +16,16 @@ A lightweight Python command-line utility for batch downloading files from URLs 
 bash
 python3 download_files.py input.txt
 
-### Input format (.tsv)
-
-
+nput format
 https://example.com/genome.fasta.gz    sample_genome
 https://example.com/annotation.gff.gz  sample_annotation
 
-## Output
+The script generates:
 
 sample_genome.fasta
 sample_annotation.gff
 
-For `.tar.gz` files, the archive remains unchanged.
+For .tar.gz files, the archive remains unchanged.
 
 ## Requirements
 
