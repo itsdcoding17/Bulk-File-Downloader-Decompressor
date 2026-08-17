@@ -26,7 +26,6 @@ https://example.com/annotation.gff.gz  sample_annotation
 
 sample_genome.fasta
 sample_annotation.gff
-```
 
 For `.tar.gz` files, the archive remains unchanged.
 
