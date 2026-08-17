@@ -1,5 +1,6 @@
-## Bulk-File-Downloader-Decompressor
-A lightweight Python command-line utility for batch downloading files from URLs using a tab-separated input file. It automatically preserves file extensions and decompresses .gz files after download.
+# Bulk File Downloader & Decompressor
+
+A lightweight Python command-line utility for **batch downloading files from URLs** using a tab-separated input file. It automatically preserves file extensions and decompresses `.gz` files after download.
 
 ## Features
 
@@ -13,26 +14,32 @@ A lightweight Python command-line utility for batch downloading files from URLs 
 
 ## Usage
 
-bash
+```bash
 python3 download_files.py input.txt
+```
 
-nput format
+### Input format
+
+```text
 https://example.com/genome.fasta.gz    sample_genome
 https://example.com/annotation.gff.gz  sample_annotation
+```
 
-The script generates:
+## Output:
 
+```text
 sample_genome.fasta
 sample_annotation.gff
+```
 
-For .tar.gz files, the archive remains unchanged.
+For `.tar.gz` files, the archive remains unchanged.
 
 ## Requirements
 
 * Python 3
 * `wget`
 
-## Python modules
+### Python modules
 
 Uses only Python standard-library modules:
 
@@ -40,6 +47,6 @@ Uses only Python standard-library modules:
 
 ## Workflow
 
-Read URLs → Download → Preserve extensions → Decompress `.gz` → Clean up
+**Read URLs → Download → Preserve extensions → Decompress `.gz` → Clean up**
 
-A simple utility for automating repetitive **bioinformatics data-download workflows.
+A simple utility for automating repetitive **bioinformatics data-download workflows**.
